@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Mar 20 18:56:09 2023
-Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Fitter Status : Successful - Wed Mar 22 18:30:55 2023
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : two_out_of_five
 Top-level Entity Name : two_out_of_five
 Family : Cyclone IV E
 Device : EP4CE6F17C8
 Timing Models : Final
-Total logic elements : 19 / 6,272 ( < 1 % )
-    Total combinational functions : 19 / 6,272 ( < 1 % )
+Total logic elements : 8 / 6,272 ( < 1 % )
+    Total combinational functions : 8 / 6,272 ( < 1 % )
     Dedicated logic registers : 0 / 6,272 ( 0 % )
 Total registers : 0
 Total pins : 28 / 180 ( 16 % )

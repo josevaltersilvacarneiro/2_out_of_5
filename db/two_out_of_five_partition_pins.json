@@ -4,54 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "A",
-					"strict" : false
-				},
-				{
-					"name" : "B",
-					"strict" : false
-				},
-				{
-					"name" : "C",
-					"strict" : false
-				},
-				{
-					"name" : "D",
-					"strict" : false
-				},
-				{
-					"name" : "E",
-					"strict" : false
-				},
-				{
-					"name" : "F",
-					"strict" : false
-				},
-				{
-					"name" : "G",
-					"strict" : false
-				},
-				{
-					"name" : "c1",
-					"strict" : false
-				},
-				{
-					"name" : "c2",
-					"strict" : false
-				},
-				{
-					"name" : "c3",
-					"strict" : false
-				},
-				{
-					"name" : "c4",
-					"strict" : false
-				},
-				{
-					"name" : "c5",
-					"strict" : false
-				},
-				{
 					"name" : "r1",
 					"strict" : false
 				},
@@ -81,26 +33,6 @@
 				},
 				{
 					"name" : "l",
-					"strict" : false
-				},
-				{
-					"name" : "b",
-					"strict" : false
-				},
-				{
-					"name" : "c",
-					"strict" : false
-				},
-				{
-					"name" : "e",
-					"strict" : false
-				},
-				{
-					"name" : "d",
-					"strict" : false
-				},
-				{
-					"name" : "a",
 					"strict" : false
 				},
 				{
