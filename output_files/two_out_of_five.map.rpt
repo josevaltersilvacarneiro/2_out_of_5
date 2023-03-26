@@ -1,6 +1,6 @@
 Analysis & Synthesis report for two_out_of_five
-Wed Mar 22 18:30:47 2023
-Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Sun Mar 26 15:30:53 2023
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
 ---------------------
@@ -24,7 +24,7 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2021  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -41,24 +41,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 22 18:30:47 2023       ;
-; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
-; Revision Name                      ; two_out_of_five                             ;
-; Top-level Entity Name              ; two_out_of_five                             ;
-; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 8                                           ;
-;     Total combinational functions  ; 8                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 28                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Mar 26 15:30:53 2023          ;
+; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                      ; two_out_of_five                                ;
+; Top-level Entity Name              ; two_out_of_five                                ;
+; Family                             ; Cyclone IV E                                   ;
+; Total logic elements               ; 38                                             ;
+;     Total combinational functions  ; 38                                             ;
+;     Dedicated logic registers      ; 0                                              ;
+; Total registers                    ; 0                                              ;
+; Total pins                         ; 32                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -175,46 +175,48 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 8         ;
-;                                             ;           ;
-; Total combinational functions               ; 8         ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 0         ;
-;     -- 3 input functions                    ; 8         ;
-;     -- <=2 input functions                  ; 0         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 8         ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 0         ;
-;     -- Dedicated logic registers            ; 0         ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 28        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; ch3~input ;
-; Maximum fan-out                             ; 8         ;
-; Total fan-out                               ; 60        ;
-; Average fan-out                             ; 0.94      ;
-+---------------------------------------------+-----------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+; Estimated Total logic elements              ; 38      ;
+;                                             ;         ;
+; Total combinational functions               ; 38      ;
+; Logic element usage by number of LUT inputs ;         ;
+;     -- 4 input functions                    ; 15      ;
+;     -- 3 input functions                    ; 12      ;
+;     -- <=2 input functions                  ; 11      ;
+;                                             ;         ;
+; Logic elements by mode                      ;         ;
+;     -- normal mode                          ; 38      ;
+;     -- arithmetic mode                      ; 0       ;
+;                                             ;         ;
+; Total registers                             ; 0       ;
+;     -- Dedicated logic registers            ; 0       ;
+;     -- I/O registers                        ; 0       ;
+;                                             ;         ;
+; I/O pins                                    ; 32      ;
+;                                             ;         ;
+; Embedded Multiplier 9-bit elements          ; 0       ;
+;                                             ;         ;
+; Maximum fan-out node                        ; e~input ;
+; Maximum fan-out                             ; 12      ;
+; Total fan-out                               ; 170     ;
+; Average fan-out                             ; 1.67    ;
++---------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                     ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name     ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+-----------------+--------------+
-; |two_out_of_five           ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |two_out_of_five               ; two_out_of_five ; work         ;
-;    |matrix:comb_9|         ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |two_out_of_five|matrix:comb_9 ; matrix          ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+-----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                        ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-----------------+--------------+
+; |two_out_of_five           ; 38 (6)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |two_out_of_five                  ; two_out_of_five ; work         ;
+;    |display:comb_14|       ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |two_out_of_five|display:comb_14  ; display         ; work         ;
+;    |matrix:comb_13|        ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |two_out_of_five|matrix:comb_13   ; matrix          ; work         ;
+;    |validator:comb_7|      ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |two_out_of_five|validator:comb_7 ; validator       ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -238,15 +240,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 28                          ;
-; cycloneiii_lcell_comb ; 18                          ;
-;     normal            ; 18                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 8                           ;
-;         3 data inputs ; 8                           ;
+; boundary_port         ; 32                          ;
+; cycloneiii_lcell_comb ; 49                          ;
+;     normal            ; 49                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 10                          ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 15                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.81                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.40                        ;
 +-----------------------+-----------------------------+
 
 
@@ -264,8 +268,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Wed Mar 22 18:30:38 2023
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Sun Mar 26 15:30:45 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off two_out_of_five -c two_out_of_five
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -277,50 +281,31 @@ Info (12021): Found 1 design units, including 1 entities, in source file matrix.
     Info (12023): Found entity 1: matrix File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/matrix.v Line: 1
 Warning (12125): Using design file two_out_of_five.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: two_out_of_five File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 8
-Critical Warning (10846): Verilog HDL Instantiation warning at two_out_of_five.v(28): instance has no name File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 28
-Critical Warning (10846): Verilog HDL Instantiation warning at two_out_of_five.v(39): instance has no name File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 39
-Critical Warning (10846): Verilog HDL Instantiation warning at two_out_of_five.v(44): instance has no name File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 44
+Critical Warning (10846): Verilog HDL Instantiation warning at two_out_of_five.v(36): instance has no name File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 36
+Critical Warning (10846): Verilog HDL Instantiation warning at two_out_of_five.v(47): instance has no name File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 47
+Critical Warning (10846): Verilog HDL Instantiation warning at two_out_of_five.v(52): instance has no name File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 52
 Info (12127): Elaborating entity "two_out_of_five" for the top level hierarchy
-Info (12128): Elaborating entity "validator" for hierarchy "validator:comb_3" File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 28
-Warning (10030): Net "an" at validator.v(5) has no driver or initial value, using a default initial value '0' File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/validator.v Line: 5
-Warning (10030): Net "bn" at validator.v(5) has no driver or initial value, using a default initial value '0' File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/validator.v Line: 5
-Warning (10030): Net "cn" at validator.v(5) has no driver or initial value, using a default initial value '0' File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/validator.v Line: 5
-Warning (10030): Net "dn" at validator.v(5) has no driver or initial value, using a default initial value '0' File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/validator.v Line: 5
-Warning (10030): Net "en" at validator.v(5) has no driver or initial value, using a default initial value '0' File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/validator.v Line: 5
-Info (12128): Elaborating entity "matrix" for hierarchy "matrix:comb_9" File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 39
-Info (12128): Elaborating entity "display" for hierarchy "display:comb_10" File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 44
+Info (12128): Elaborating entity "validator" for hierarchy "validator:comb_7" File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 36
+Info (12128): Elaborating entity "matrix" for hierarchy "matrix:comb_13" File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 47
+Info (12128): Elaborating entity "display" for hierarchy "display:comb_14" File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 52
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "A" is stuck at GND File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 18
-    Warning (13410): Pin "B" is stuck at VCC File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 18
-    Warning (13410): Pin "C" is stuck at VCC File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 18
-    Warning (13410): Pin "D" is stuck at GND File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 18
-    Warning (13410): Pin "E" is stuck at GND File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 18
-    Warning (13410): Pin "F" is stuck at GND File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 18
-    Warning (13410): Pin "G" is stuck at GND File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 18
-    Warning (13410): Pin "c1" is stuck at GND File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 22
-    Warning (13410): Pin "c2" is stuck at GND File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 22
-    Warning (13410): Pin "c3" is stuck at GND File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 22
-    Warning (13410): Pin "c4" is stuck at GND File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 22
-    Warning (13410): Pin "c5" is stuck at GND File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 22
+    Warning (13410): Pin "digit_1" is stuck at VCC File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 25
+    Warning (13410): Pin "digit_2" is stuck at VCC File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 25
+    Warning (13410): Pin "digit_3" is stuck at VCC File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 25
+    Warning (13410): Pin "dot" is stuck at VCC File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 25
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/output_files/two_out_of_five.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 5 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "a" File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 15
-    Warning (15610): No output dependent on input pin "b" File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 15
-    Warning (15610): No output dependent on input pin "c" File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 15
-    Warning (15610): No output dependent on input pin "d" File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 15
-    Warning (15610): No output dependent on input pin "e" File: /home/josevaltersilvacarneiro/Documentos/programming/verilog/two_out_of_five/two_out_of_five.v Line: 15
-Info (21057): Implemented 36 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 70 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 8 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 397 megabytes
-    Info: Processing ended: Wed Mar 22 18:30:47 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:18
+    Info (21059): Implemented 24 output pins
+    Info (21061): Implemented 38 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 386 megabytes
+    Info: Processing ended: Sun Mar 26 15:30:53 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +------------------------------------------+

@@ -9,7 +9,8 @@ module two_out_of_five (
 	a, b, c, d, e, ch1, ch2, ch3,
 	A, B, C, D, E, F, G,
 	c1, c2, c3, c4, c5,
-	r1, r2, r3, r4, r5, r6, r7, l
+	r1, r2, r3, r4, r5, r6, r7, l,
+	digit_1, digit_2, digit_3, dot
 );
 
 	input a, b, c, d, e; 					// input pins MSB → LSB
@@ -21,17 +22,24 @@ module two_out_of_five (
 	output r1, r2, r3, r4, r5, r6, r7;	// led metrix
 	output c1, c2, c3, c4, c5;				// column led matrix
 	
+	output digit_1, digit_2, digit_3, dot;
+	
 	wire vout; 									// valid?
+	
+	buf(digit_1, 1'b1);
+	buf(digit_2, 1'b1);
+	buf(digit_3, 1'b1);
+	buf(dot, 1'b1);
 	
 	validator (
 		.a (a), .b (b), .c (c), .d (d), .e (e), .v (vout)
 	);
 	
-	assign c1 = a & vout;
-	assign c2 = b & vout;
-	assign c3 = c & vout;
-	assign c4 = d & vout;
-	assign c5 = e & vout;
+	and(c1, a, vout);
+	and(c2, b, vout);
+	and(c3, c, vout);
+	and(c4, d, vout);
+	and(c5, e, vout);
 		
 	matrix (
 		.ch1 (ch1), .ch2 (ch2), .ch3 (ch3),
@@ -42,5 +50,4 @@ module two_out_of_five (
 		.v (vout), .a (a), .b (b), .c (c), .d (d), .e (e),
 		.A (A), .B (B), .C (C), .D (D), .E (E), .F (F), .G (G)
 	);
-	
 endmodule

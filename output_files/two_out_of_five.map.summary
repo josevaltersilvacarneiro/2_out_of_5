@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Mar 22 18:30:47 2023
-Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Sun Mar 26 15:30:53 2023
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : two_out_of_five
 Top-level Entity Name : two_out_of_five
 Family : Cyclone IV E
-Total logic elements : 8
-    Total combinational functions : 8
+Total logic elements : 38
+    Total combinational functions : 38
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 28
+Total pins : 32
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

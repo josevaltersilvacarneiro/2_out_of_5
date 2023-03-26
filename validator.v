@@ -1,9 +1,15 @@
 module validator (a, b, c, d, e, v);
-	input a, b, c, d, e;
+	input  a, b, c, d, e;
 	output v;
 	
 	wire an, bn, cn, dn, en;
 	wire o1, o2, o3, o4, o5, o6, o7, o8, o9, o10;
+	
+	not(an, a);
+	not(bn, b);
+	not(cn, c);
+	not(dn, d);
+	not(en, e);
 	
 	// 1
 	and(o1, an, bn, cn, d, e);
