@@ -1,4 +1,8 @@
-module validator (a, b, c, d, e, v);
+module validator (
+	a, b, c, d, e,
+	v
+);
+
 	input  a, b, c, d, e;
 	output v;
 	

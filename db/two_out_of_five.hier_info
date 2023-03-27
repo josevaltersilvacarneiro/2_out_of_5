@@ -88,6 +88,7 @@ v <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |two_out_of_five|matrix:comb_13
+v => comb.IN1
 ch1 => WideOr0.IN0
 ch1 => WideOr1.IN0
 ch1 => WideOr2.IN0
@@ -119,7 +120,7 @@ r4 <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 r5 <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
 r6 <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 r7 <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-l <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+l <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |two_out_of_five|display:comb_14

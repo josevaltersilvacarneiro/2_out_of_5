@@ -21,7 +21,6 @@ module display (
 	not(dn, d);
 	not(en, e);
 	
-	// zero
 	and(zero, an, bn, c, d, en);
 	and(one, a, bn, cn, dn, e);
 	and(two, an, b, cn, dn, e);
@@ -45,10 +44,10 @@ module display (
 	or(D, one, four, seven);
 	
 	// E
-	or(E, three, one, seven, nine, four, five);
+	or(E, one, three, four, five, seven, nine);
 	
 	// F
-	or(F, three, one, two, seven);
+	or(F, one, two, three, seven);
 	
 	// G
 	or(G, zero, one, seven);

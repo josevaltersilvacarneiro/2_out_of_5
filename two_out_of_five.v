@@ -32,7 +32,8 @@ module two_out_of_five (
 	buf(dot, 1'b1);
 	
 	validator (
-		.a (a), .b (b), .c (c), .d (d), .e (e), .v (vout)
+		.a (a), .b (b), .c (c), .d (d), .e (e),
+		.v (vout)
 	);
 	
 	and(c1, a, vout);
@@ -42,12 +43,15 @@ module two_out_of_five (
 	and(c5, e, vout);
 		
 	matrix (
+		.v (vout),
 		.ch1 (ch1), .ch2 (ch2), .ch3 (ch3),
-		.r1 (r1), .r2 (r2), .r3 (r3), .r4 (r4), .r5 (r5), .r6 (r6), .r7 (r7), .l (l)
+		.r1 (r1), .r2 (r2), .r3 (r3), .r4 (r4), .r5 (r5), .r6 (r6), .r7 (r7),
+		.l (l)
 	);
 	
 	display (
-		.v (vout), .a (a), .b (b), .c (c), .d (d), .e (e),
+		.v (vout),
+		.a (a), .b (b), .c (c), .d (d), .e (e),
 		.A (A), .B (B), .C (C), .D (D), .E (E), .F (F), .G (G)
 	);
 endmodule
